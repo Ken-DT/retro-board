@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.App {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header h1 {
+  margin: 0;
+  color: #000;
+}
+
+.layout-switcher {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+}
+
+.layout-switcher svg {
+  color: #000; /* Ensure the icons are black */
+}
+
+.retro-board {
+  padding-top: 80px; /* Add padding to account for the fixed header */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.retro-board.row .categories {
+  flex-direction: column;
+}
+
+.retro-board.column .categories {
+  flex-direction: row;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+}
+
+.category {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+}
+
+.category.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.category.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.category h2 {
+  margin: 0 10px 0 0;
+}
+
+.category .items {
+  display: flex;
+}
+
+.category .items.row {
+  flex-direction: row;
+}
+
+.category .items.column {
+  flex-direction: column;
+}
+
+.category.went-well {
+  background-color: #009688;
+  color: #fff;
+}
+
+.category.to-improve {
+  background-color: #cad22a;
+  color: #fff;
+}
+
+.category.action-items {
+  background-color: #cd2e49;
+  color: #fff;
+}
+
+.category button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.retrospective-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.item-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-controls button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000; /* Ensure the icons are black */
+}
+
+.item-controls svg {
+  pointer-events: none; /* Ensure the icon itself does not intercept click events */
+}
