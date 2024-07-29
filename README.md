@@ -8,7 +8,7 @@ Retro Board is a retrospective board application that allows users to add, updat
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/retro-board.git
+   git clone https://github.com/Ken-DT/retro-board.git
 
 2. Navigate to the project directory:
     ```bash
